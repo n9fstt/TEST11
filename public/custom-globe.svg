@@ -1,0 +1,18 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="38" stroke="white" stroke-width="4" fill="none"/>
+  <!-- Horizontal lines -->
+  <path d="M2 40H78" stroke="white" stroke-width="3" />
+  <path d="M10 20H70" stroke="white" stroke-width="3" />
+  <path d="M10 60H70" stroke="white" stroke-width="3" />
+  
+  <!-- Vertical lines -->
+  <path d="M40 2V78" stroke="white" stroke-width="3" />
+  <path d="M20 10V70" stroke="white" stroke-width="3" />
+  <path d="M60 10V70" stroke="white" stroke-width="3" />
+  
+  <!-- Curved lines connecting segments -->
+  <path d="M2 40C2 19 19 2 40 2" stroke="white" stroke-width="3" />
+  <path d="M40 2C61 2 78 19 78 40" stroke="white" stroke-width="3" />
+  <path d="M78 40C78 61 61 78 40 78" stroke="white" stroke-width="3" />
+  <path d="M40 78C19 78 2 61 2 40" stroke="white" stroke-width="3" />
+</svg> 
