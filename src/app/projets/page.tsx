@@ -92,7 +92,6 @@ export default function ProjectsPage() {
   const projectsRef = useRef<HTMLDivElement>(null);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showReturn, setShowReturn] = useState(false);
 
   const filteredProjects = selectedCategory === 'All'
     ? shuffledProjects.slice(currentIndex, currentIndex + 3)
@@ -103,7 +102,6 @@ export default function ProjectsPage() {
       const newIndex = prevIndex + 3;
       return newIndex >= projects.length ? 0 : newIndex;
     });
-    setShowReturn(true);
   };
 
   const handleReturn = () => {
@@ -206,9 +204,7 @@ export default function ProjectsPage() {
               >
                 <div className="absolute inset-0 flex items-center justify-center p-8 text-center bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300">
                   <div className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-white space-y-4">
-                    <span className="text-sm uppercase tracking-wider">
-                      {project.category}
-                    </span>
+                    <span className="text-sm uppercase tracking-wider">{project.category}</span>
                     <h3 className="text-2xl font-bold">{project.title}</h3>
                     <p className="text-gray-300">{project.description}</p>
                     <a
@@ -231,14 +227,12 @@ export default function ProjectsPage() {
               >
                 Voir plus
               </button>
-              {showReturn && (
-                <button
-                  onClick={handleReturn}
-                  className="bg-white text-black px-6 py-2 ml-4 rounded-full hover:bg-gray-200 transition-colors duration-300"
-                >
-                  Retour
-                </button>
-              )}
+              <button
+                onClick={handleReturn}
+                className="bg-white text-black px-6 py-2 ml-4 rounded-full hover:bg-gray-200 transition-colors duration-300"
+              >
+                Retour
+              </button>
             </div>
           )}
 
