@@ -13,27 +13,27 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="top-0 left-0 right-0 z-50 bg-black bg-opacity-95 text-white py-3 px-4 sm:px-6 lg:px-8">
+    <nav className="top-0 left-0 right-0 z-50 bg-black bg-opacity-95 text-white py-5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
           <div className="flex items-center">
-            {/* Use the original icon2fav.png and adjust margin */}
+            {/* Use the provided icon2fav.png */}
             <Image 
               src="/icon2fav.png" 
               alt="Logo Icon" 
               width={40} 
               height={40} 
-              className="mr-2"  // Adjusted margin for left alignment
+              className="mr-3"
               priority
             />
             <div className="flex flex-col">
               <span 
-                className="text-2xl md:text-3xl font-serif font-light tracking-widest 
-                           text-white transition-colors duration-300 ease-in-out"
+                className="text-2xl md:text-3xl font-bold tracking-wide 
+                           text-white transition-colors duration-300 ease-in-out group-hover:text-gray-300"
               >
-                WebFern
+                Webfern
               </span>
-              <span className="text-xs tracking-[0.2em] text-gray-300 mt-[-1px] font-sans">
+              <span className="text-xs tracking-widest text-gray-300 mt-[-4px]">
                 L'ATELIER DU WEB ÉLÉGANT
               </span>
             </div>
@@ -41,21 +41,23 @@ export default function Navigation() {
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]">
+          <Link href="/" className="hover:text-gray-300 transition-colors">
             ACCUEIL
           </Link>
-          <Link href="/about" className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]">
+          <Link href="/about" className="hover:text-gray-300 transition-colors">
             À PROPOS
           </Link>
-          <Link href="/services" className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]">
-            SERVICES
-          </Link>
-          <Link href="/projets" className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]">
+          <div className="relative group">
+            <Link href="/services" className="hover:text-gray-300 transition-colors">
+              SERVICES
+            </Link>
+          </div>
+          <Link href="/projets" className="hover:text-gray-300 transition-colors">
             PROJETS
           </Link>
           <Link 
             href="/contact"
-            className="ml-4 px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors font-sans text-sm tracking-[0.15em]"
+            className="ml-4 px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors"
           >
             LANCEZ VOTRE PROJET →
           </Link>
@@ -93,35 +95,35 @@ export default function Navigation() {
         <div className="flex flex-col space-y-6 px-6">
           <Link 
             href="/" 
-            className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]"
+            className="hover:text-gray-300 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             ACCUEIL
           </Link>
           <Link 
             href="/about" 
-            className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]"
+            className="hover:text-gray-300 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             À PROPOS
           </Link>
           <Link 
             href="/services" 
-            className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]"
+            className="hover:text-gray-300 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             SERVICES
           </Link>
           <Link 
             href="/projets" 
-            className="hover:text-gray-300 transition-colors font-sans text-sm tracking-[0.15em]"
+            className="hover:text-gray-300 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             PROJETS
           </Link>
           <Link 
             href="/contact"
-            className="inline-block px-4 py-2 bg-white text-black text-center rounded-full hover:bg-gray-200 transition-colors text-sm tracking-[0.15em]"
+            className="inline-block px-4 py-2 bg-white text-black text-center rounded-full hover:bg-gray-200 transition-colors text-sm"
             onClick={() => setIsOpen(false)}
           >
             LANCEZ VOTRE PROJET →

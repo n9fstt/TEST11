@@ -129,29 +129,27 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="card group relative overflow-hidden rounded-lg aspect-square bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                className="service-card p-6 bg-gray-50 rounded-xl space-y-4 hover:bg-gray-100 transition-transform duration-300 transform hover:-translate-y-2"
               >
-                <div className="p-6 space-y-4">
-                  <h2 className="text-2xl font-semibold">{service.title}</h2>
-                  <p className="text-gray-600">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center text-gray-700"
-                      >
-                        <span className="w-2 h-2 bg-black rounded-full mr-3" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href="/contact"
-                    className="text-gray-600 hover:text-gray-800 font-medium"
-                  >
-                    En savoir plus
-                  </a>
-                </div>
+                <h2 className="text-2xl font-semibold">{service.title}</h2>
+                <p className="text-gray-600">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li
+                      key={featureIndex}
+                      className="flex items-center text-gray-700"
+                    >
+                      <span className="w-2 h-2 bg-black rounded-full mr-3" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="/contact"
+                  className="text-gray-600 hover:text-gray-800 font-medium"
+                >
+                  En savoir plus
+                </a>
               </div>
             ))}
           </div>

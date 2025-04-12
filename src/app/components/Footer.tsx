@@ -19,9 +19,9 @@ export default function Footer() {
           </Link>
           <p className="text-sm text-gray-400 text-left">L'ATELIER DU WEB ÉLÉGANT</p>
           <p className="text-xs text-gray-400 mt-2 text-left">
-            <strong>Design sur mesure</strong>, <br /> 
-            <strong>Développement performant</strong>, <br /> 
-            <strong>E-commerce professionnel</strong>.
+            Design sur mesure, <br /> 
+            développement performant, <br /> 
+            e-commerce professionnel.
           </p>
         </div>
 

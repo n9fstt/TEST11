@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   title: "Webfern - Création de Sites Web Modernes",
   description: "Nous créons des sites web modernes et minimalistes pour les entreprises qui veulent se démarquer.",
   icons: {
-    icon: '/la-toile.png',
-    shortcut: '/la-toile.png',
-    apple: '/la-toile.png',
+    icon: '/icon2fav.png',
+    shortcut: '/icon2fav.png',
+    apple: '/icon2fav.png',
     other: {
       rel: 'apple-touch-icon-precomposed',
-      url: '/la-toile.png',
+      url: '/icon2fav.png',
     },
   },
 };
